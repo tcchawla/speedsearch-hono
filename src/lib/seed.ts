@@ -5,8 +5,6 @@ const redis = new Redis({
   token: 'AdbgAAIjcDFjZDM2NTAwNmVmOTE0YmU0OWFhMDQ2MzM4YzU1MjQ4M3AxMA',
 })
 
-const data = await redis.set('foo', 'bar');
-
 const countryList = [
 	"Afghanistan",
 	"Albania",
