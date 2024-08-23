@@ -269,7 +269,7 @@ countryList.forEach((country) => {
 
     // zadd is redis data structure for storing Data as sorted set.
     const populateDb = async () => {
-        await redis.zadd("terms", {}, ...terms)
+        await redis.zadd("terms", ...terms.map(term => ({score: term.score, value: term.member})))
     }
 
     populateDb()
