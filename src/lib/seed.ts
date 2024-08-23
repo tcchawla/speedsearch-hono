@@ -1,4 +1,4 @@
-import { Redis } from '@upstash/redis'
+import { Redis } from '@upstash/redis/vercel'
 
 const redis = new Redis({
   url: 'https://living-lemur-55008.upstash.io',
