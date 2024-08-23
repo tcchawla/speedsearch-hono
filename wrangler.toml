@@ -1,0 +1,7 @@
+name="speedsearch"
+compatibility_date = "2024-08-21"
+
+[vars]
+
+UPSTASH_REDIS_REST_TOKEN = "AdbgAAIjcDFjZDM2NTAwNmVmOTE0YmU0OWFhMDQ2MzM4YzU1MjQ4M3AxMA"
+UPSTASH_REDIS_REST_URL = "https://living-lemur-55008.upstash.io"
