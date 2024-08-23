@@ -1,4 +1,4 @@
-import { Redis } from '@upstash/redis/vercel'
+import { Redis } from '@upstash/redis'
 
 const redis = new Redis({
   url: 'https://living-lemur-55008.upstash.io',
@@ -269,7 +269,7 @@ countryList.forEach((country) => {
 
     // zadd is redis data structure for storing Data as sorted set.
     const populateDb = async () => {
-        await redis.zadd("terms", ...terms)
+        await redis.zadd("terms", {}, ...terms)
     }
 
     populateDb()
